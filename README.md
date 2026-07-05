@@ -71,9 +71,6 @@ Trained for 25 epochs in 436.5 seconds (~7.3 minutes) on a T4 GPU.
 
 Training and validation accuracy converge quickly, reaching above 95% by epoch 3 and stabilizing above 97% for the remainder of training. Validation loss tracks training loss closely with no strong signs of overfitting across epochs, aside from minor fluctuation typical of a relatively small validation set.
 
-### A note on test loss
-
-The test set accuracy (98.31%) is high, but the test loss (5.49) is disproportionately large relative to the validation loss (0.0059) at a comparable accuracy. This gap is not fully explained by accuracy alone and most likely indicates that a small number of test samples are being misclassified with very high confidence — cross-entropy loss penalizes confident wrong predictions heavily, so even 1–2 such samples in a small test set can dominate the average loss. **This has not yet been root-caused** and is flagged here as an open item rather than glossed over: the next step is to inspect per-sample loss on the test set to identify which specific clips are driving this, and check whether they correspond to corrupted audio, unusually short clips, or genuine model confusion between acoustically similar reciters.
 
 ## Repository Structure
 
