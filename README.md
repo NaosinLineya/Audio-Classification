@@ -8,7 +8,7 @@ Speaker identification from audio is a well-studied problem in signal processing
 
 ## Dataset
 
-- **Source:** [Quran Recitation dataset on Kaggle](https://www.kaggle.com/datasets/naosinlineya/quran-recitation)
+- **Source:** (https://www.kaggle.com/datasets/mohammedalrajeh/quran-recitations-for-audio-classification)
 - **Size:** 6,687 audio clips
 - **Classes:** 12 reciters
 - **Split:** 70% train / 15% validation / 15% test
